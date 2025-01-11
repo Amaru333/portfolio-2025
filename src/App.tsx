@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import ProjectPage from "./pages/ProjectPage";
+import Medverse from "./pages/projects/Medverse";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/projects" element={<ProjectPage />} />
+            <Route path="/projects/medverse" element={<Medverse />} />
           </Routes>
         </div>
       </ThemeProvider>
