@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Medverse",
+    "description": "An online ed tech platform specially for medical professionals, with certification and user scores.",
+    "image": "medverse.png",
+    "tag": ["web"],
+    "slug": "medverse"
+  },
+  {
+    "title": "PayShare",
+    "description": "A mobile app for sharing expenses among friends.",
+    "image": "payshare.png",
+    "tag": ["mobile"],
+    "slug": "payshare"
+  },
+  {
+    "title": "WorkQuest",
+    "description": "A web app for managing job applications.",
+    "image": "workquest.png",
+    "tag": ["web", "design"],
+    "slug": "workquest"
+  },
+  {
+    "title": "FlyFrenzy",
+    "description": "A web app for tracking flight prices and getting email/SMS notifications regarding price drops.",
+    "image": "fly-frenzy.png",
+    "tag": ["web"],
+    "slug": "fly-frenzy",
+    "badge": ["trophy"]
+  },
+  {
+    "title": "Meducate",
+    "description": "An online ed tech platform with a custom made in video quiz feature.",
+    "image": "meducate.png",
+    "tag": ["web"],
+    "slug": "meducate"
+  },
+  {
+    "title": "SplitLy",
+    "description": "An online web app for splitting bills among friends.",
+    "image": "splitly.png",
+    "tag": ["web"],
+    "slug": "splitly",
+    "badge": ["trophy"]
+  },
+  {
+    "title": "Pizza",
+    "description": "A mobile app for ordering pizza.",
+    "image": "pizza.png",
+    "tag": ["mobile"],
+    "slug": "pizza"
+  },
+  {
+    "title": "UNCC Website Revamp",
+    "description": "Revamping the design and functionality of the UNCC admission and financial aid website.",
+    "image": "uncc-revamp.png",
+    "tag": ["design"],
+    "slug": "uncc-revamp"
+  },
+  {
+    "title": "Note taking app",
+    "description": "A simple note taking app with a decent UI.",
+    "image": "notes-app.png",
+    "tag": ["web", "design"],
+    "slug": "notes-app"
+  },
+  {
+    "title": "Recipe app",
+    "description": "A simple recipe taking app with a decent UI.",
+    "image": "recipe-app.png",
+    "tag": ["web", "design"],
+    "slug": "recipe-app"
+  }
+]
