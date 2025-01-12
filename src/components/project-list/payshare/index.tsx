@@ -48,7 +48,7 @@ function PayShare() {
           </li>
         </ul>
         <p className="text-2xl font-semibold mt-8">How I built</p>
-        <p className="mt-2">
+        <div className="mt-2">
           <b className="text-lg">Frontend:</b>
           <ul className="list-disc list-inside mt-2">
             <li>
@@ -66,8 +66,8 @@ function PayShare() {
               <span className="font-semibold">Axios:</span> For making API requests.
             </li>
           </ul>
-        </p>
-        <p className="mt-2">
+        </div>
+        <div className="mt-2">
           <b className="text-lg">Backend:</b>
           <ul className="list-disc list-inside mt-2">
             <li>
@@ -83,8 +83,8 @@ function PayShare() {
               and session handling.
             </li>
           </ul>
-        </p>
-        <p className="mt-2">
+        </div>
+        <div className="mt-2">
           <b className="text-lg">APIs:</b>
           <ul className="list-disc list-inside mt-2">
             <li>
@@ -97,8 +97,8 @@ function PayShare() {
               the delivery of OTPs directly to users&apos; inboxes.
             </li>
           </ul>
-        </p>
-        <p className="mt-2">
+        </div>
+        <div className="mt-2">
           <b className="text-lg">Dev Tools:</b>
           <ul className="list-disc list-inside mt-2">
             <li>
@@ -108,7 +108,7 @@ function PayShare() {
               <span className="font-semibold">GitHub:</span> For version control and collaboration.
             </li>
           </ul>
-        </p>
+        </div>
         <div className="flex gap-x-2 my-6">
           <Button variant="outline" asChild>
             <a

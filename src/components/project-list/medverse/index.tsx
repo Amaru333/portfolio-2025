@@ -49,7 +49,7 @@ function Medverse() {
           </li>
         </ul>
         <p className="text-2xl font-semibold mt-8">How I built</p>
-        <p className="mt-2">
+        <div className="mt-2">
           <b className="text-lg">Frontend:</b>
           <ul className="list-disc list-inside mt-2">
             <li>
@@ -68,8 +68,8 @@ function Medverse() {
               <span className="font-semibold">Redux Toolkit:</span> For global state management.
             </li>
           </ul>
-        </p>
-        <p className="mt-2">
+        </div>
+        <div className="mt-2">
           <b className="text-lg">Backend:</b>
           <ul className="list-disc list-inside mt-2">
             <li>
@@ -85,8 +85,8 @@ function Medverse() {
               and session handling.
             </li>
           </ul>
-        </p>
-        <p className="mt-2">
+        </div>
+        <div className="mt-2">
           <b className="text-lg">APIs:</b>
           <ul className="list-disc list-inside mt-2">
             <li>
@@ -94,8 +94,8 @@ function Medverse() {
             </li>
             <li>Implemented dynamic routing and middleware for API protection.</li>
           </ul>
-        </p>
-        <p className="mt-2">
+        </div>
+        <div className="mt-2">
           <b className="text-lg">Dev Tools:</b>
           <ul className="list-disc list-inside mt-2">
             <li>
@@ -108,7 +108,7 @@ function Medverse() {
               <span className="font-semibold">GitHub:</span> For version control and collaboration.
             </li>
           </ul>
-        </p>
+        </div>
         <div className="flex gap-x-2 my-6">
           <Button variant="outline" asChild>
             <a

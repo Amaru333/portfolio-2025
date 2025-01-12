@@ -6,19 +6,14 @@ import ProjectHeader from "@/common/ProjectHeader";
 import ProjectImageCarousel from "@/common/ProjectImageCarousel";
 
 function WorkQuest() {
-  const stacks = [
-    "Next.js",
-    "Expo",
-    "TypeScript",
-    "Node.js",
-    "Express",
-    "MongoDB",
-    "Redux Toolkit",
-  ];
+  const stacks = ["Next.js", "Redux Toolkit", "Node.js", "Express", "MongoDB", "Figma"];
   return (
     <div className="w-full max-w-screen-xl mx-auto min-h-screen py-12">
-      <ProjectHeader title="WorkQuest" timeline="July 2024 - August 2024" />
-      <ProjectImageCarousel folder="payshare" count={11} />
+      <ProjectHeader
+        title="WorkQuest"
+        timeline="September 2024 - November 2024 (College Capstone Project)"
+      />
+      <ProjectImageCarousel folder="workquest" count={9} />
       <div className="flex flex-wrap mt-4 gap-2 mb-8">
         {stacks.map((stack) => (
           <Badge key={stack} text={stack} />
@@ -26,88 +21,62 @@ function WorkQuest() {
       </div>
       <div className="text-slate-800 dark:text-slate-200">
         <p>
-          WorkQuest is a platform designed to simplify expense sharing among friends and groups. It
-          helps users to split bills, track expenses, and settle debts effortlessly.
+          A comprehensive redesign of an existing job search platform inspired by Craigslist Jobs,
+          aimed at improving user experience, accessibility, and functionality. This project
+          includes enhanced features, better visual design, and a more intuitive user interface to
+          assist users in finding jobs efficiently. It also offers four different languages for the
+          user to choose from.
         </p>
-        <ul className="list-disc list-inside mt-2">
+        <h3 className="text-2xl font-semibold mt-2">Project Details</h3>
+        <ul className="mt-2">
           <li>
-            <span className="font-semibold">User Authentication:</span> Users can sign up or log in
-            through email using One Time Password (OTP), eliminating the need for passwords.
+            <strong>Objective:</strong> To revamp the user experience of an outdated job search
+            portal by improving navigation, design, and usability.
           </li>
           <li>
-            <span className="font-semibold">Expense Tracking:</span> Users can create groups, add
-            expenses, and split bills among group members.
+            <strong>Target Audience:</strong> Job seekers, especially students and recent graduates.
           </li>
           <li>
-            <span className="font-semibold">Settlements:</span> Users can settle debts with group
-            members using a simplified interface.
-          </li>
-          <li>
-            <span className="font-semibold">Real-time Updates:</span> All group members receive
-            real-time updates on expenses and settlements.
+            <strong>Key Features:</strong>
+            <ul className="list-disc list-inside">
+              <li>Job application tracking system with categorized statuses.</li>
+              <li>Ability to upload resumes and profile information.</li>
+              <li>Guest viewing mode for exploring job listings without registration.</li>
+              <li>Filtering and searching jobs based on eligibility and payscale.</li>
+              <li>Interactive messaging between applicants and employers.</li>
+            </ul>
           </li>
         </ul>
-        <p className="text-2xl font-semibold mt-8">How I built</p>
-        <p className="mt-2">
-          <b className="text-lg">Frontend:</b>
-          <ul className="list-disc list-inside mt-2">
-            <li>
-              <span className="font-semibold">React Native with Expo:</span> For building the mobile
-              app.
-            </li>
-            <li>
-              <span className="font-semibold">Redux Toolkit:</span> For state management.
-            </li>
-            <li>
-              <span className="font-semibold">Expo Navigation:</span> For routing and navigations
-              such as Stack Navigation, Bottom Bar Navigation.
-            </li>
-            <li>
-              <span className="font-semibold">Axios:</span> For making API requests.
-            </li>
-          </ul>
+        <h3 className="text-2xl font-semibold mt-2">Design Process</h3>
+        <p>
+          The project began with usability testing on wireframes and prototypes, gathering feedback
+          from a diverse group of users. Key issues like navigation difficulties, lack of
+          accessibility, and cluttered layouts were identified and addressed.
         </p>
-        <p className="mt-2">
-          <b className="text-lg">Backend:</b>
-          <ul className="list-disc list-inside mt-2">
-            <li>
-              <span className="font-semibold">Node.js with Express:</span> For handling server-side
-              logic and database interactions.
-            </li>
-            <li>
-              <span className="font-semibold">MongoDB with Mongoose:</span> For storing user data,
-              group data, and expenses.
-            </li>
-            <li>
-              <span className="font-semibold">JWT Authentication:</span> For token-based security
-              and session handling.
-            </li>
-          </ul>
+        <p>
+          Improvements included implementing a card-based design, enhancing the filtering system,
+          adding a guest viewing mode, and streamlining the layout for better readability.
         </p>
-        <p className="mt-2">
-          <b className="text-lg">APIs:</b>
-          <ul className="list-disc list-inside mt-2">
-            <li>
-              Developed RESTful APIs for user authentication, group management, expense tracking,
-              settlements, and so on.
-            </li>
-            <li>Implemented middleware for API protection.</li>
-            <li>
-              Utilized the Nodemailer library to handle the automated email functionality, enabling
-              the delivery of OTPs directly to users&apos; inboxes.
-            </li>
-          </ul>
-        </p>
-        <p className="mt-2">
-          <b className="text-lg">Dev Tools:</b>
-          <ul className="list-disc list-inside mt-2">
-            <li>
-              <span className="font-semibold">Postman:</span> For API testing.
-            </li>
-            <li>
-              <span className="font-semibold">GitHub:</span> For version control and collaboration.
-            </li>
-          </ul>
+        <iframe
+          className="w-full aspect-video my-4"
+          src="https://www.youtube.com/embed/nUEIXUD83t8?si=KYZBeLPY4dZdL4LA"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+        <h3 className="text-2xl font-semibold mt-2">Technologies Used</h3>
+        <ul className="list-disc list-inside mt-2">
+          <li>Frontend: ReactJS, CSS, Figma for prototyping</li>
+          <li>Backend: NodeJS, Express</li>
+          <li>Tools: Postman for API testing, Visual Studio Code</li>
+        </ul>
+        <h3 className="text-2xl font-semibold mt-2">Key Achievements</h3>
+        <p>
+          The redesign was positively received during post-testing, with users praising the improved
+          navigation and usability. The changes successfully addressed initial pain points, creating
+          a more user-friendly experience.
         </p>
         <div className="flex gap-x-2 my-6">
           <Button variant="outline" asChild>
