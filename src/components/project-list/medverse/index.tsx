@@ -1,9 +1,9 @@
-import Badge from "@/components/Badge";
+import Badge from "@/common/Badge";
 import { ExternalLink, Github } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import ProjectHeader from "@/components/ProjectHeader";
-import ProjectImageCarousel from "@/components/ProjectImageCarousel";
+import ProjectHeader from "@/common/ProjectHeader";
+import ProjectImageCarousel from "@/common/ProjectImageCarousel";
 
 function Medverse() {
   const stacks = [

@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
-import { Project } from "../pages/ProjectPage";
-import { Link } from "react-router-dom";
+import { Project } from ".";
+import Link from "next/link";
 
 function RenderCard({ project }: { project: Project }) {
   return (
@@ -12,7 +12,7 @@ function RenderCard({ project }: { project: Project }) {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <Link to={`/projects/${project.slug}`}>
+      <Link href={`/projects/${project.slug}`}>
         <div className="h-48 bg-slate-200 dark:bg-slate-900 p-2 flex items-center justify-center rounded-xl relative">
           <div className="absolute top-0 right-0 p-3 flex space-x-1">
             {project.tag.map((tag) => (

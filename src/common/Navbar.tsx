@@ -3,6 +3,7 @@
 import { useTheme } from "../context/ThemeContext";
 import { Moon, Sun, Home, Briefcase, Mail, User } from "lucide-react";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 export default function Navbar() {
   const { theme, toggleTheme } = useTheme();
@@ -23,7 +24,7 @@ export default function Navbar() {
         transition={{ duration: 0.3 }}
       >
         {navItems.map((item) => (
-          <a key={item.href} href={item.href}>
+          <Link key={item.href} href={item.href}>
             <motion.div
               className={`p-3 mx-1 rounded-full hover:bg-accent`}
               //   className={`p-3 mx-1 rounded-full ${pathname === item.href ? 'bg-primary text-primary-foreground' : 'hover:bg-accent'}`}
@@ -32,7 +33,7 @@ export default function Navbar() {
             >
               <item.icon size={24} />
             </motion.div>
-          </a>
+          </Link>
         ))}
         <motion.button
           onClick={toggleTheme}

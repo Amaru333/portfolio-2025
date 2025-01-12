@@ -1,15 +1,15 @@
 import { ChevronLeft } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { useRouter } from "next/navigation";
 
 function ProjectHeader({ title, timeline }: { title: string; timeline: string }) {
-  const navigate = useNavigate();
+  const navigate = useRouter();
   return (
     <>
       <div className="flex items-center gap-x-2 mb-2">
         <ChevronLeft
           className="w-6 h-6 cursor-pointer"
           onClick={() => {
-            navigate(-1);
+            navigate.back();
           }}
         />
         <p className="text-3xl font-bold">{title}</p>

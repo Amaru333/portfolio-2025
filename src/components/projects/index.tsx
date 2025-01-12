@@ -2,7 +2,7 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 
 import data from "../data/ProjectList.json";
-import RenderCard from "../components/RenderCard";
+import RenderCard from "./RenderCard";
 
 export interface Project {
   image: string;
@@ -12,7 +12,7 @@ export interface Project {
   slug: string;
 }
 
-function ProjectPage() {
+function Projects() {
   const filters = ["all", "web", "mobile", "design"];
   const [selectedFilter, setSelectedFilter] = useState("all");
 
@@ -61,4 +61,4 @@ function ProjectPage() {
   );
 }
 
-export default ProjectPage;
+export default Projects;

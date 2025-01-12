@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import { ChevronRight } from "lucide-react";
 import { useRef } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 function SectionTwo() {
   const changeValues = [0, 1];
@@ -25,7 +25,7 @@ function SectionTwo() {
         <motion.div className="flex flex-col justify-center items-end gap-8 col-span-4">
           <p className="text-8xl font-semibold">projects</p>
           <Link
-            to="/projects"
+            href="/projects"
             className="relative items-center justify-start inline-block px-5 py-3 overflow-hidden font-medium rounded-full group"
           >
             <span className="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-slate-950 dark:bg-slate-50 opacity-[3%]"></span>
