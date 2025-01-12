@@ -7,7 +7,7 @@ import ProjectImageCarousel from "@/common/ProjectImageCarousel";
 
 function WorkQuest() {
   const stacks = [
-    "React Native",
+    "Next.js",
     "Expo",
     "TypeScript",
     "Node.js",
