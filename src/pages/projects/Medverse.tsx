@@ -1,15 +1,9 @@
 import Badge from "@/components/Badge";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import { ChevronLeft, ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 
-import Autoplay from "embla-carousel-autoplay";
 import { Button } from "@/components/ui/button";
+import ProjectHeader from "@/components/ProjectHeader";
+import ProjectImageCarousel from "@/components/ProjectImageCarousel";
 
 function Medverse() {
   const stacks = [
@@ -23,36 +17,8 @@ function Medverse() {
   ];
   return (
     <div className="w-full max-w-screen-xl mx-auto min-h-screen py-12">
-      <div className="flex items-center gap-x-2 mb-2">
-        <ChevronLeft className="w-6 h-6" />
-        <p className="text-3xl font-bold">Medverse</p>
-      </div>
-      <p className="text-slate-500 mb-4 text-sm font-medium ml-8">
-        December 2024 (4 day - hackathon program)
-      </p>
-      <Carousel
-        plugins={[
-          Autoplay({
-            delay: 4000,
-          }),
-        ]}
-      >
-        <CarouselContent>
-          {Array(8)
-            .fill(" ")
-            .map((_, index) => (
-              <CarouselItem key={index}>
-                <img
-                  src={`/projects/medverse/${index + 1}.png`}
-                  alt="medverse"
-                  className="w-full object-contain rounded-2xl"
-                />
-              </CarouselItem>
-            ))}
-        </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
-      </Carousel>
+      <ProjectHeader title="Medverse" timeline="December 2024 (4 day - hackathon program)" />
+      <ProjectImageCarousel folder="medverse" count={8} />
       <div className="flex flex-wrap mt-4 gap-2 mb-8">
         {stacks.map((stack) => (
           <Badge key={stack} text={stack} />

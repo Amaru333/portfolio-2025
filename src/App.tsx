@@ -1,4 +1,3 @@
-// import { useState } from "react";
 import "./App.css";
 import { ThemeProvider } from "./context/ThemeContext";
 import Navbar from "./components/Navbar";
@@ -6,6 +5,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import ProjectPage from "./pages/ProjectPage";
 import Medverse from "./pages/projects/Medverse";
+import PayShare from "./pages/projects/PayShare";
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
             <Route path="/" element={<Homepage />} />
             <Route path="/projects" element={<ProjectPage />} />
             <Route path="/projects/medverse" element={<Medverse />} />
+            <Route path="/projects/payshare" element={<PayShare />} />
           </Routes>
         </div>
       </ThemeProvider>
