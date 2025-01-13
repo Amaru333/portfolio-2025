@@ -4,9 +4,37 @@ import { Github, Figma } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ProjectHeader from "@/common/ProjectHeader";
 import ProjectImageCarousel from "@/common/ProjectImageCarousel";
+import DownloadFile from "@/common/DownloadFile";
 
 function WorkQuest() {
   const stacks = ["Next.js", "Redux Toolkit", "Node.js", "Express", "MongoDB", "Figma"];
+  const downloadableFiles = [
+    {
+      name: "Design Concept",
+      link: "/projects/workquest/design_concept.pdf",
+      file_name: "design_concept.pdf",
+    },
+    {
+      name: "Design Critique",
+      link: "/projects/workquest/design_critique.pdf",
+      file_name: "design_critique.pdf",
+    },
+    {
+      name: "Pre Usability Testing",
+      link: "/projects/workquest/pre_usability_testing.pdf",
+      file_name: "pre_usability_testing.pdf",
+    },
+    {
+      name: "Usability Testing",
+      link: "/projects/workquest/usability_testing.pdf",
+      file_name: "usability_testing.pdf",
+    },
+    {
+      name: "Presentation",
+      link: "/projects/workquest/presentation.pptx",
+      file_name: "presentation.pptx",
+    },
+  ];
   return (
     <div className="w-full max-w-screen-xl mx-auto min-h-screen py-12">
       <ProjectHeader
@@ -27,7 +55,7 @@ function WorkQuest() {
           assist users in finding jobs efficiently. It also offers four different languages for the
           user to choose from.
         </p>
-        <h3 className="text-2xl font-semibold mt-2">Project Details</h3>
+        <h3 className="text-2xl font-semibold mt-3">Project Details</h3>
         <ul className="mt-2">
           <li>
             <strong>Objective:</strong> To revamp the user experience of an outdated job search
@@ -47,7 +75,7 @@ function WorkQuest() {
             </ul>
           </li>
         </ul>
-        <h3 className="text-2xl font-semibold mt-2">Design Process</h3>
+        <h3 className="text-2xl font-semibold mt-3">Design Process</h3>
         <p>
           The project began with usability testing on wireframes and prototypes, gathering feedback
           from a diverse group of users. Key issues like navigation difficulties, lack of
@@ -66,18 +94,24 @@ function WorkQuest() {
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
         ></iframe>
-        <h3 className="text-2xl font-semibold mt-2">Technologies Used</h3>
-        <ul className="list-disc list-inside mt-2">
+        <h3 className="text-2xl font-semibold mt-3">Technologies Used</h3>
+        <ul className="list-disc list-inside">
           <li>Frontend: ReactJS, CSS, Figma for prototyping</li>
           <li>Backend: NodeJS, Express</li>
           <li>Tools: Postman for API testing, Visual Studio Code</li>
         </ul>
-        <h3 className="text-2xl font-semibold mt-2">Key Achievements</h3>
+        <h3 className="text-2xl font-semibold mt-3">Key Achievements</h3>
         <p>
           The redesign was positively received during post-testing, with users praising the improved
           navigation and usability. The changes successfully addressed initial pain points, creating
           a more user-friendly experience.
         </p>
+        <h3 className="text-2xl font-semibold mt-3 mb-2">Feasibility Study</h3>
+        <div className="flex flex-row gap-x-4 flex-wrap">
+          {downloadableFiles.map((file) => (
+            <DownloadFile key={file.name} {...file} />
+          ))}
+        </div>
         <div className="flex gap-x-2 my-6">
           <Button variant="outline" asChild>
             <a
