@@ -10,6 +10,7 @@ export interface Project {
   description: string;
   tag: string[];
   slug: string;
+  badge?: string[];
 }
 
 function Projects() {
