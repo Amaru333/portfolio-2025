@@ -20,12 +20,12 @@ function RenderCard({ project }: { project: Project }) {
             {project.badge &&
               project.badge.map((badge) => (
                 <HoverCard key={badge} openDelay={100} closeDelay={100}>
-                  <HoverCardTrigger>
+                  <HoverCardTrigger asChild>
                     <div key={badge} className="bg-yellow-500 text-white p-1.5 rounded-full">
                       <Trophy size={14} />
                     </div>
                   </HoverCardTrigger>
-                  <HoverCardContent>
+                  <HoverCardContent asChild>
                     <p className="text-xs font-medium">Hackathon Winning Project!</p>
                   </HoverCardContent>
                 </HoverCard>
