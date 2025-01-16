@@ -40,7 +40,7 @@ function FlyFrenzy() {
         <div className="mt-2">
           <p>We&apos;ve used the following technologies to build our application:</p>
           <ul className="list-disc list-inside mt-2">
-            <li>NextJS for front-end</li>
+            <li>NextJS for front-end with TailwindCSS for styling</li>
             <li>Python + Flask for back-end API and cron job</li>
             <li>MongoDB for database Courier for sending notifications</li>
           </ul>
