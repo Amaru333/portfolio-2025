@@ -24,7 +24,7 @@ export default function Navbar() {
         transition={{ duration: 0.3 }}
       >
         {navItems.map((item) => (
-          <Link key={item.href} href={item.href}>
+          <Link key={item.href} href={item.href} aria-label={item.label}>
             <motion.div
               className={`p-3 mx-1 rounded-full hover:bg-accent`}
               //   className={`p-3 mx-1 rounded-full ${pathname === item.href ? 'bg-primary text-primary-foreground' : 'hover:bg-accent'}`}
@@ -37,6 +37,7 @@ export default function Navbar() {
         ))}
         <motion.button
           onClick={toggleTheme}
+          aria-label="Toggle Theme"
           className="p-3 mx-1 rounded-full hover:bg-accent"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
