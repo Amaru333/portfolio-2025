@@ -15,8 +15,8 @@ function DownloadFile({
     <Button className="py-6">
       <a href={link} download={file_name} className="w-fit flex flex-row items-center">
         <div className="flex flex-col items-start">
-          <p>{name}</p>
-          <p className="text-xs text-slate-400">{file_name}</p>
+          <p className="max-w-60 line-clamp-1">{name}</p>
+          <p className="text-xs text-slate-400 max-w-60 line-clamp-1">{file_name}</p>
         </div>
         <div>
           <DownloadCloud className="ml-4 -mb-1" size={20} />

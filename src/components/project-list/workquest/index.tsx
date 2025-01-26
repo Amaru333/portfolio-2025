@@ -107,7 +107,7 @@ function WorkQuest() {
           a more user-friendly experience.
         </p>
         <h3 className="text-2xl font-semibold mt-3 mb-2">Feasibility Study</h3>
-        <div className="flex flex-row gap-x-4 flex-wrap">
+        <div className="flex flex-row gap-4 flex-wrap">
           {downloadableFiles.map((file) => (
             <DownloadFile key={file.name} {...file} />
           ))}
