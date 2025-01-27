@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 function SectionOne() {
   const section1ScrollConstant = 100;
@@ -24,7 +25,7 @@ function SectionOne() {
   const opacity = useTransform(section1RightScrollY, [0, 1], [1, 0]);
   return (
     <main className="relative overflow-x-hidden">
-      <section id="about" className="h-screen w-screen flex items-center justify-center">
+      <section id="about" className="h-screen w-screen flex flex-col items-center justify-center">
         <div className="grid grid-cols-2 w-full gap-x-8">
           <motion.div
             className="flex justify-end items-center"
@@ -42,6 +43,21 @@ function SectionOne() {
             <p>mobile app developer</p>
             <p>ui/ux designer</p>
           </motion.div>
+        </div>
+        <div className="flex items-center justify-center gap-8 p-4 mt-20">
+          <a href="https://www.github.com/Amaru333" target="_blank" rel="noopener noreferrer">
+            <Github className="h-8 w-8" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/amrutesh-arun"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Linkedin className="h-8 w-8" />
+          </a>
+          <a href="mailto:amrutesharun0599@gmail.com">
+            <Mail className="h-8 w-8" />
+          </a>
         </div>
       </section>
 

@@ -7,7 +7,6 @@ function Home() {
     <div>
       <SectionOne />
       <SectionTwo />
-      <div className="h-screen"></div>
     </div>
   );
 }
