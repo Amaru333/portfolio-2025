@@ -23,8 +23,8 @@ function SectionTwo() {
         ref={sectionDiv}
       >
         <motion.div className="flex flex-col justify-center items-end gap-8 col-span-4">
-          <p className="text-8xl font-semibold">projects</p>
-          <Link
+          <p className="text-6xl font-semibold">my works</p>
+          {/* <Link
             href="/projects"
             className="relative items-center justify-start inline-block px-5 py-3 overflow-hidden font-medium rounded-full group"
           >
@@ -34,9 +34,26 @@ function SectionTwo() {
               view all <ChevronRight size={18} />
             </span>
             <span className="absolute inset-0 border-2 border-black dark:border-white rounded-full"></span>
-          </Link>
+          </Link> */}
         </motion.div>
-        <div className="grid grid-cols-4 grid-rows-3 h-full col-span-8">
+        <div className="h-full col-span-8 flex flex-col gap-y-12 items-center justify-center">
+          <Link
+            href="/projects"
+            className="opacity-60 text-6xl font-medium flex items-center gap-x-2 hover:opacity-100 transition-opacity duration-200 ease-in-out"
+          >
+            <p>projects</p>
+            <ChevronRight size={36} className="mt-2" />
+          </Link>
+          <Link
+            href="https://amaru333.github.io/hookies/"
+            target="_blank"
+            className="opacity-60 text-6xl font-medium flex items-center gap-x-2 hover:opacity-100 transition-opacity duration-200 ease-in-out"
+          >
+            <p>libraries</p>
+            <ChevronRight size={36} className="mt-2" />
+          </Link>
+        </div>
+        {/* <div className="grid grid-cols-4 grid-rows-3 h-full col-span-8">
           <div className="col-span-2">
             <div className="aspect-w-16 aspect-h-9">
               <img src="/project-headers/medverse.png" alt="project" className="object-cover" />
@@ -68,7 +85,7 @@ function SectionTwo() {
               <img src="/project-headers/fly-frenzy.png" alt="project" />
             </div>
           </div>
-        </div>
+        </div> */}
       </motion.div>
     </section>
   );
