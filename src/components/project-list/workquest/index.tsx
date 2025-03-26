@@ -7,7 +7,7 @@ import ProjectImageCarousel from "@/common/ProjectImageCarousel";
 import DownloadFile from "@/common/DownloadFile";
 
 function WorkQuest() {
-  const stacks = ["Next.js", "Redux Toolkit", "Node.js", "Express", "MongoDB", "Figma"];
+  const stacks = ["Next.js", "Tailwind", "Redux Toolkit", "Node.js", "Express", "MongoDB", "Figma"];
   const downloadableFiles = [
     {
       name: "Design Concept",
@@ -96,8 +96,12 @@ function WorkQuest() {
         ></iframe>
         <h3 className="text-2xl font-semibold mt-3">Technologies Used</h3>
         <ul className="list-disc list-inside">
-          <li>Frontend: ReactJS, CSS, Figma for prototyping</li>
+          <li>Frontend: ReactJS, NextJS, TailwindCSS, Figma for prototyping</li>
           <li>Backend: NodeJS, Express</li>
+          <li>Database: MongoDB</li>
+          <li>State Management: Redux Toolkit</li>
+          <li>Version Control: Git, GitHub</li>
+          <li>Deployment: Vercel</li>
           <li>Tools: Postman for API testing, Visual Studio Code</li>
         </ul>
         <h3 className="text-2xl font-semibold mt-3">Key Achievements</h3>
