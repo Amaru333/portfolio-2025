@@ -27,13 +27,7 @@ function Projects() {
       <p className="text-5xl text-center font-semibold py-6">projects</p>
       <div className="flex items-center justify-center space-x-1">
         {filters.map((filter) => (
-          <button
-            key={filter}
-            onClick={() => setSelectedFilter(filter)}
-            className={`${
-              selectedFilter === filter ? "" : ""
-            } relative rounded-full text-white px-3 py-1.5 transition`}
-          >
+          <button key={filter} onClick={() => setSelectedFilter(filter)} className={`${selectedFilter === filter ? "" : ""} relative rounded-full text-white px-3 py-1.5 transition`}>
             {selectedFilter === filter && (
               <motion.div
                 className="absolute inset-0 bg-black dark:bg-white"
@@ -51,7 +45,7 @@ function Projects() {
         ))}
       </div>
 
-      <div className="grid grid-cols-4 gap-8 mt-8">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mt-8">
         <AnimatePresence>
           {filteredData.map((project) => (
             <RenderCard key={project.slug} project={project} />
