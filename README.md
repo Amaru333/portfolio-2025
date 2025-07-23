@@ -24,6 +24,22 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Code Quality & CI/CD
+
+This project includes automated code quality checks through GitHub Actions:
+
+### Linting
+- **ESLint** is configured with Next.js and TypeScript rules
+- Run locally with: `npm run lint`
+- Automatically runs on every push and pull request to `main` branch
+
+### GitHub Actions Workflow
+The `.github/workflows/lint.yml` workflow:
+- Triggers on pushes and PRs to `main`
+- Sets up Node.js environment with dependency caching
+- Installs dependencies and runs linting
+- Fails CI if linting errors are found (warnings are allowed)
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
