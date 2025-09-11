@@ -1,8 +1,8 @@
-import { useState } from "react";
-import { AnimatePresence, motion } from "motion/react";
+import { useState } from 'react';
+import { AnimatePresence, motion } from 'motion/react';
 
-import data from "../data/ProjectList.json";
-import RenderCard from "./RenderCard";
+import data from '../data/ProjectList.json';
+import RenderCard from './RenderCard';
 
 export interface Project {
   image: string;
@@ -14,11 +14,11 @@ export interface Project {
 }
 
 function Projects() {
-  const filters = ["all", "web", "mobile", "design"];
-  const [selectedFilter, setSelectedFilter] = useState("all");
+  const filters = ['all', 'web', 'mobile', 'design', 'data visualization'];
+  const [selectedFilter, setSelectedFilter] = useState('all');
 
   const filteredData = data.filter((project: Project) => {
-    if (selectedFilter === "all") return true;
+    if (selectedFilter === 'all') return true;
     return project.tag.includes(selectedFilter);
   });
 
@@ -27,14 +27,20 @@ function Projects() {
       <p className="text-5xl text-center font-semibold py-6">projects</p>
       <div className="flex items-center justify-center space-x-1">
         {filters.map((filter) => (
-          <button key={filter} onClick={() => setSelectedFilter(filter)} className={`${selectedFilter === filter ? "" : ""} relative rounded-full text-white px-3 py-1.5 transition`}>
+          <button
+            key={filter}
+            onClick={() => setSelectedFilter(filter)}
+            className={`${
+              selectedFilter === filter ? '' : ''
+            } relative rounded-full text-white px-3 py-1.5 transition`}
+          >
             {selectedFilter === filter && (
               <motion.div
                 className="absolute inset-0 bg-black dark:bg-white"
                 style={{ borderRadius: 9999 }}
                 layoutId="pill"
                 transition={{
-                  type: "spring",
+                  type: 'spring',
                   stiffness: 500,
                   damping: 30,
                 }}

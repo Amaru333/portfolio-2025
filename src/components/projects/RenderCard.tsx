@@ -1,8 +1,8 @@
-import { motion } from "motion/react";
-import { Project } from ".";
-import Link from "next/link";
-import { Trophy } from "lucide-react";
-import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
+import { motion } from 'motion/react';
+import { Project } from '.';
+import Link from 'next/link';
+import { Trophy } from 'lucide-react';
+import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/hover-card';
 
 function RenderCard({ project }: { project: Project }) {
   return (
@@ -36,13 +36,15 @@ function RenderCard({ project }: { project: Project }) {
               <p
                 key={tag}
                 className={`capitalize text-white text-xs ${
-                  tag === "web"
-                    ? "bg-blue-500"
-                    : tag === "mobile"
-                    ? "bg-green-500"
-                    : tag === "design"
-                    ? "bg-yellow-500"
-                    : "bg-gray-500"
+                  tag === 'web'
+                    ? 'bg-blue-500'
+                    : tag === 'mobile'
+                    ? 'bg-green-500'
+                    : tag === 'design'
+                    ? 'bg-yellow-500'
+                    : tag === 'data visualization'
+                    ? 'bg-purple-500'
+                    : 'bg-gray-500'
                 } px-2 py-1 rounded-full`}
               >
                 {tag}

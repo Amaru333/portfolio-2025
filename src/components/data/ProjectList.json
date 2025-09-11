@@ -70,5 +70,12 @@
     "image": "recipe-app.png",
     "tag": ["web", "design"],
     "slug": "recipe-app"
+  },
+  {
+    "title": "Visualization of New York City Airport Traffic",
+    "description": "A web app for visualizing airport traffic data in New York City.",
+    "image": "nyc-airport-traffic.png",
+    "tag": ["data visualization"],
+    "slug": "nyc-airport-traffic"
   }
 ]
