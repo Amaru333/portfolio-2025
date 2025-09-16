@@ -110,6 +110,46 @@ function NycAirport() {
           Further analysis could delve into specific routes, airlines, or the impact of other
           external factors.
         </p>
+        <p className="text-2xl font-semibold mt-8">Airline Market Share: 2000 vs. 2024</p>
+        <p>
+          Examining the market share of airlines in terms of revenue passenger volume provides
+          insight into the competitive landscape and how it has evolved. Let&apos;s compare the
+          market share in 2000 and 2024.
+        </p>
+        <p className="text-lg font-semibold mt-4">Market Share in 2000:</p>
+        <img
+          src="/projects/nyc-airport/stats-2000.png"
+          alt="Airline Market Share 2000"
+          className="my-4 w-full object-contain"
+        />
+        <p>
+          In 2000, the market was dominated by a few major airlines, with a significant portion of
+          the market falling under &quot;Others&quot;, representing a fragmented landscape beyond
+          the top players.
+        </p>
+        <p className="text-lg font-semibold mt-4">Market Share in 2024:</p>
+        <img
+          src="/projects/nyc-airport/stats-2024.png"
+          alt="Airline Market Share 2024"
+          className="my-4 w-full object-contain"
+        />
+        <p>
+          By 2024, while major airlines still hold significant shares, there appears to be some
+          shifts in the distribution. The &quot;Others&quot; category also remains, indicating the
+          presence of numerous smaller carriers or specialized services. A direct comparison of the
+          top airlines in both years would provide more specific insights into which airlines gained
+          or lost market share.
+        </p>
+        <p className="text-2xl font-semibold mt-4">Conclusion</p>
+        <p>
+          The data reveals distinct trends in passenger and freight traffic at New York&apos;s
+          airports. Passenger volume shows a strong recovery after a significant pandemic-related
+          dip, while freight volume exhibits a more complex pattern. The airline market share
+          analysis highlights the dynamic nature of the aviation industry. Further analysis could
+          delve into the specific factors driving these trends, the impact of new airlines or
+          routes, and the implications for infrastructure development and airport operations in the
+          future.
+        </p>
         <div className="flex gap-x-2 my-6">
           <Button variant="outline" asChild>
             <a
