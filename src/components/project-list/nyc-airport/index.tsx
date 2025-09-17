@@ -96,20 +96,6 @@ function NycAirport() {
             to broader economic conditions.
           </li>
         </ul>
-        <p className="text-2xl font-semibold mt-8">Ethical Considerations:</p>
-        <p>
-          Analyzing airport data can have ethical considerations related to data privacy, especially
-          if more granular data on individual travel patterns were available. It&apos;s important to
-          ensure that data is anonymized and aggregated to protect individual privacy. Additionally,
-          insights gained from this data could inform decisions about airport expansion or resource
-          allocation, which could have environmental and social impacts on surrounding communities.
-          These potential implications should be considered in any decision-making process.
-        </p>
-        <p>
-          This analysis provides a high-level overview of passenger and freight volume trends.
-          Further analysis could delve into specific routes, airlines, or the impact of other
-          external factors.
-        </p>
         <p className="text-2xl font-semibold mt-8">Airline Market Share: 2000 vs. 2024</p>
         <p>
           Examining the market share of airlines in terms of revenue passenger volume provides
@@ -139,6 +125,20 @@ function NycAirport() {
           presence of numerous smaller carriers or specialized services. A direct comparison of the
           top airlines in both years would provide more specific insights into which airlines gained
           or lost market share.
+        </p>
+        <p className="text-2xl font-semibold mt-8">Ethical Considerations:</p>
+        <p>
+          Analyzing airport data can have ethical considerations related to data privacy, especially
+          if more granular data on individual travel patterns were available. It&apos;s important to
+          ensure that data is anonymized and aggregated to protect individual privacy. Additionally,
+          insights gained from this data could inform decisions about airport expansion or resource
+          allocation, which could have environmental and social impacts on surrounding communities.
+          These potential implications should be considered in any decision-making process.
+        </p>
+        <p>
+          This analysis provides a high-level overview of passenger and freight volume trends.
+          Further analysis could delve into specific routes, airlines, or the impact of other
+          external factors.
         </p>
         <p className="text-2xl font-semibold mt-4">Conclusion</p>
         <p>
