@@ -10,7 +10,7 @@ function NycAirport() {
     <div className="w-full max-w-screen-xl mx-auto min-h-screen py-12">
       <ProjectHeader
         title="Analysis of Passenger and Freight Volume at New York Airports (2000-2024)"
-        timeline="August 2025 - October 2025"
+        timeline="August 2025 - September 2025"
       />
       <div className="flex flex-wrap mt-4 gap-2 mb-8">
         {stacks.map((stack) => (
